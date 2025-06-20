@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Grup & Testi×Stok</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://files.catbox.moe/fx00mc.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: white;
+        }
+        
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.7);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        
+        .container {
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+            padding: 30px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(5px);
+            border: 1px solid #333;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            background: linear-gradient(90deg, #000000, #4b0082, #0000ff, #4b0082, #000000);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 10px rgba(75, 0, 130, 0.5);
+            animation: gradient 5s ease infinite;
+            background-size: 400% 400%;
+        }
+        
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin: 15px 0;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.7);
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s;
+            border: 1px solid #333;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+        }
+        
+        .btn:active {
+            transform: translateY(1px);
+        }
+        
+        .btn-grup1 {
+            background: linear-gradient(45deg, #075E54, #128C7E);
+            border: 1px solid #25D366;
+        }
+        
+        .btn-grup1:hover {
+            background: linear-gradient(45deg, #054D44, #0D7D6F);
+        }
+        
+        .btn-grup2 {
+            background: linear-gradient(45deg, #34B7F1, #2A9ED8);
+            border: 1px solid #34B7F1;
+        }
+        
+        .btn-grup2:hover {
+            background: linear-gradient(45deg, #2A9ED8, #1E87C0);
+        }
+        
+        .btn-testimoni {
+            background: linear-gradient(45deg, #FF5722, #E64A19);
+            border: 1px solid #FF5722;
+        }
+        
+        .btn-testimoni:hover {
+            background: linear-gradient(45deg, #E64A19, #C34113);
+        }
+        
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: 0.5s;
+        }
+        
+        .btn:hover::before {
+            left: 100%;
+        }
+        
+        .footer {
+            margin-top: 30px;
+            color: #888;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    
+    <div class="container">
+        <h1>ALL GRUB & TESTI×STOK</h1>
+        
+        <a href="https://chat.whatsapp.com/HOcu0BqSRP80KpU2Cc2C5B" class="btn btn-grup1" target="_blank">
+            LINK GRUB¹
+        </a>
+        
+        <a href="https://chat.whatsapp.com/HP9yH5XHKQm9Kuf6NkQtLX" class="btn btn-grup2" target="_blank">
+            LINK GRUB2
+        </a>
+        
+        <a href="https://whatsapp.com/channel/0029Vb6EIIJ6WaKh2JiOwT16" class="btn btn-testimoni" target="_blank">
+           CH BY MILXTESTIMONI
+        </a>
+        
+        <div class="footer">
+           Silakan klik tombol di atas untuk bergabung
+        </div>
+    </div>
+</body>
+</html>
